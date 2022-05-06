@@ -1,0 +1,2319 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.7f1 (6bd9e232123f) revision 7068130'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 16315 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/marek/Documents/GitHub/SubwaySurfers/Subway Surfers
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+62391
+Successfully changed project path to: C:/Users/marek/Documents/GitHub/SubwaySurfers/Subway Surfers
+C:/Users/marek/Documents/GitHub/SubwaySurfers/Subway Surfers
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 87.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.7f1 (6bd9e232123f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/marek/Documents/GitHub/SubwaySurfers/Subway Surfers/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004727 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 86.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.592 seconds
+Domain Reload Profiling:
+	ReloadAssembly (593ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (453ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (95ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005658 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Domain Reload Profiling:
+	ReloadAssembly (936ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (742ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (347ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (224ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3218 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (112.1 KB). Loaded Objects now: 3677.
+Memory consumption went from 114.7 MB to 114.6 MB.
+Total: 2.659800 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.160900 ms MarkObjects: 2.182900 ms  DeleteObjects: 0.085000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 85173.500976 seconds.
+  path: Assets/Ymca Dance.fbx
+  artifactKey: Guid(9c73a0ba9e9c5fc4b9a9b31fe56c0e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ymca Dance.fbx using Guid(9c73a0ba9e9c5fc4b9a9b31fe56c0e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c3d35c05471ec8374399c673149e6f') in 0.066018 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005606 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.980 seconds
+Domain Reload Profiling:
+	ReloadAssembly (981ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (759ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (345ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (78.9 KB). Loaded Objects now: 3679.
+Memory consumption went from 114.7 MB to 114.6 MB.
+Total: 3.508900 ms (FindLiveObjects: 0.252600 ms CreateObjectMapping: 0.193200 ms MarkObjects: 2.989900 ms  DeleteObjects: 0.071900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005253 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.983 seconds
+Domain Reload Profiling:
+	ReloadAssembly (984ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (763ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.1 KB). Loaded Objects now: 3681.
+Memory consumption went from 114.7 MB to 114.7 MB.
+Total: 2.806500 ms (FindLiveObjects: 0.319600 ms CreateObjectMapping: 0.206200 ms MarkObjects: 2.203300 ms  DeleteObjects: 0.076200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005949 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Domain Reload Profiling:
+	ReloadAssembly (944ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (723ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (78.9 KB). Loaded Objects now: 3683.
+Memory consumption went from 114.7 MB to 114.7 MB.
+Total: 2.971200 ms (FindLiveObjects: 0.245500 ms CreateObjectMapping: 0.201700 ms MarkObjects: 2.455500 ms  DeleteObjects: 0.067700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005318 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.952 seconds
+Domain Reload Profiling:
+	ReloadAssembly (953ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (730ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (257ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (319ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.0 KB). Loaded Objects now: 3685.
+Memory consumption went from 114.7 MB to 114.7 MB.
+Total: 2.911700 ms (FindLiveObjects: 0.243000 ms CreateObjectMapping: 0.220700 ms MarkObjects: 2.373300 ms  DeleteObjects: 0.073600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 144.459366 seconds.
+  path: Assets/Sus.controller
+  artifactKey: Guid(fbbb6a2927607e84dba1e796ab068583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sus.controller using Guid(fbbb6a2927607e84dba1e796ab068583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a7875aad4f83fa03ad38334c3743ad') in 0.020181 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007457 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.947 seconds
+Domain Reload Profiling:
+	ReloadAssembly (948ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (721ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (78.9 KB). Loaded Objects now: 3687.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 2.584900 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.183200 ms MarkObjects: 2.096000 ms  DeleteObjects: 0.066400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005810 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Domain Reload Profiling:
+	ReloadAssembly (971ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (744ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (321ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.0 KB). Loaded Objects now: 3689.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 2.709400 ms (FindLiveObjects: 0.381400 ms CreateObjectMapping: 0.216000 ms MarkObjects: 2.034400 ms  DeleteObjects: 0.076400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005147 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.947 seconds
+Domain Reload Profiling:
+	ReloadAssembly (947ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (719ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (78.9 KB). Loaded Objects now: 3691.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 3.330100 ms (FindLiveObjects: 0.253700 ms CreateObjectMapping: 0.210400 ms MarkObjects: 2.789400 ms  DeleteObjects: 0.075200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005518 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (972ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (734ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.1 KB). Loaded Objects now: 3693.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 2.984900 ms (FindLiveObjects: 0.313000 ms CreateObjectMapping: 0.298400 ms MarkObjects: 2.290100 ms  DeleteObjects: 0.082100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005539 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Domain Reload Profiling:
+	ReloadAssembly (952ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (719ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.0 KB). Loaded Objects now: 3695.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 2.850400 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.180300 ms MarkObjects: 2.353200 ms  DeleteObjects: 0.068400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005915 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Domain Reload Profiling:
+	ReloadAssembly (983ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (746ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (335ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.3 KB). Loaded Objects now: 3697.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 3.064700 ms (FindLiveObjects: 0.250500 ms CreateObjectMapping: 0.170800 ms MarkObjects: 2.567900 ms  DeleteObjects: 0.074700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005252 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Domain Reload Profiling:
+	ReloadAssembly (967ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (735ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.3 KB). Loaded Objects now: 3699.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 2.514200 ms (FindLiveObjects: 0.249700 ms CreateObjectMapping: 0.202600 ms MarkObjects: 1.994900 ms  DeleteObjects: 0.066100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005557 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.949 seconds
+Domain Reload Profiling:
+	ReloadAssembly (950ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (727ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (327ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3213 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (79.3 KB). Loaded Objects now: 3701.
+Memory consumption went from 114.8 MB to 114.7 MB.
+Total: 3.026800 ms (FindLiveObjects: 0.282000 ms CreateObjectMapping: 0.256200 ms MarkObjects: 2.412500 ms  DeleteObjects: 0.074800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 447.040683 seconds.
+  path: Assets/Source/ResourcesGame/Models/Characters/Max/MaxDancing.FBX
+  artifactKey: Guid(221679868faba094a8fe7443a566432a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Models/Characters/Max/MaxDancing.FBX using Guid(221679868faba094a8fe7443a566432a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed57fb73a8194dc14ad91a05ce79f8f8') in 0.171295 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006252 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Domain Reload Profiling:
+	ReloadAssembly (965ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (720ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3260 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (0.7 MB). Loaded Objects now: 3747.
+Memory consumption went from 134.1 MB to 133.4 MB.
+Total: 2.726000 ms (FindLiveObjects: 0.238000 ms CreateObjectMapping: 0.165600 ms MarkObjects: 2.044600 ms  DeleteObjects: 0.277200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 48.670598 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b13f5fd434d2af0d63d2e2702c10c15') in 0.170352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 546.602946 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(22094615f6604ca4cbd842fdc6e13732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(22094615f6604ca4cbd842fdc6e13732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ca8673d4109ab41f96c20eba6ff304') in 0.006297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 429.511780 seconds.
+  path: Assets/Fonts/Black Anemone.otf
+  artifactKey: Guid(711488e0a07f6bd4c9130dd5e5d29724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Black Anemone.otf using Guid(711488e0a07f6bd4c9130dd5e5d29724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec20edc856a224511463fa73b55b5e64') in 0.040035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.658258 seconds.
+  path: Assets/Fonts/Black Anemone SDF.asset
+  artifactKey: Guid(fa0386a4f42e4e34984a325548596a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Black Anemone SDF.asset using Guid(fa0386a4f42e4e34984a325548596a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0e7ffa1d4110a9d626c32abc00a92f') in 0.069591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.931442 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499eee7a38161c6a1ba87ece1dc7c272') in 0.031945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cae50d9e0c5e62741c5381f08f55a22') in 0.028456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a1a5e1a7e82baca026402533ba0eb9') in 0.017134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc5802d7648e3a446c855f811b35bace') in 0.105379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.868983 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13d914b21e5e4b2ac5bd926118d083ea') in 0.015471 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005345 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.999 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1000ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (756ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (257ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3267 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.6 MB). Loaded Objects now: 3907.
+Memory consumption went from 138.7 MB to 138.1 MB.
+Total: 3.100600 ms (FindLiveObjects: 0.273000 ms CreateObjectMapping: 0.196500 ms MarkObjects: 2.344500 ms  DeleteObjects: 0.285500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 286.666174 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/01.png
+  artifactKey: Guid(6defd1b20b359234b8ebc60ab9e9bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/01.png using Guid(6defd1b20b359234b8ebc60ab9e9bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9620e875df52b773d85e2bfcefbd65') in 0.095491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/03.png
+  artifactKey: Guid(e52e6eb47547146459555e3e37484f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/03.png using Guid(e52e6eb47547146459555e3e37484f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7712ef45c4a1feecca47aadbce7f8c') in 0.037694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/08.png
+  artifactKey: Guid(5cb26e10003a1074383964ea253d7f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/08.png using Guid(5cb26e10003a1074383964ea253d7f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca43276190f7d80aea1c2218d517982') in 0.026795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/09.png
+  artifactKey: Guid(2c1cbe5b520c9c5409d8c42fb2b6e7c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/09.png using Guid(2c1cbe5b520c9c5409d8c42fb2b6e7c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa833e47caf1294d76a8dbf1fb48db8') in 0.023194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/06.png
+  artifactKey: Guid(26d30babc8d848a42b32c3e64ca2d5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/06.png using Guid(26d30babc8d848a42b32c3e64ca2d5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f2672cf17e9b4ec2e471fdf6a63148') in 0.024611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/05.png
+  artifactKey: Guid(033755346ae45474ea9b6902dda91c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/05.png using Guid(033755346ae45474ea9b6902dda91c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b08ed3d1545a08505247ebc3f62e121') in 0.021278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.451198 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/11.png
+  artifactKey: Guid(4224506927a6a4b41ba318101280c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/11.png using Guid(4224506927a6a4b41ba318101280c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3582b7df90333ccb0faddd7bb527319') in 0.019809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.266959 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/13.png
+  artifactKey: Guid(e086f5f7ccc829640b4a4b35ae3e01cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/13.png using Guid(e086f5f7ccc829640b4a4b35ae3e01cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9deb98b63e716adcc5c671e0dc1ac9b5') in 0.020400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/15.png
+  artifactKey: Guid(be3154994ead7f84d9673b2f4e611430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/15.png using Guid(be3154994ead7f84d9673b2f4e611430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdafbad8f38837e3921cd3761ac85c60') in 0.020213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024263 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/17.png
+  artifactKey: Guid(5be0187304aaafd499151139bf4ee09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/17.png using Guid(5be0187304aaafd499151139bf4ee09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc2205ebded39efdd1f95cb517dc958') in 0.019563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/19.png
+  artifactKey: Guid(a4487d09e2957924881c81d3681a612e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/19.png using Guid(a4487d09e2957924881c81d3681a612e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d1486ba19b37bf58a6918eb08f29f6') in 0.020003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.222547 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/21.png
+  artifactKey: Guid(42e3d4a7a20cc2e41b34acfbe9801311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/21.png using Guid(42e3d4a7a20cc2e41b34acfbe9801311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee25d706b03edea5e7639b3821853cde') in 0.018756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Buildings/24.png
+  artifactKey: Guid(c0175fb7b08b62242a3e9873504e51b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Buildings/24.png using Guid(c0175fb7b08b62242a3e9873504e51b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312f036206b1501904178bb7c6eecf52') in 0.021163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Source/ResourcesGame/Textures/IntroGame/Akio.png
+  artifactKey: Guid(a93663b372c133b4d8a806a29a2544e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/IntroGame/Akio.png using Guid(a93663b372c133b4d8a806a29a2544e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f8433198e83778731b2ece41fffa7d') in 0.028573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGAroundBasic.png
+  artifactKey: Guid(0fbe2a050326fb44aab98b4de0c4d5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGAroundBasic.png using Guid(0fbe2a050326fb44aab98b4de0c4d5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8adfa4246c88d8abaf4bbfa620c86577') in 0.022574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.172906 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGBorderBasic.png
+  artifactKey: Guid(bcbb86315f692384189a36d2f0413ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGBorderBasic.png using Guid(bcbb86315f692384189a36d2f0413ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579d10094f4c542bdfb334a99272b101') in 0.019636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGButtonBasic.png
+  artifactKey: Guid(3d2d24a3961c1e345a08dbb167207c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGButtonBasic.png using Guid(3d2d24a3961c1e345a08dbb167207c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e5c92383655468fc34a1bfbfe2b8643') in 0.020352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.014755 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGButtonCircle.png
+  artifactKey: Guid(2a59bbbcd0138c34e82b5f39c5d95bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGButtonCircle.png using Guid(2a59bbbcd0138c34e82b5f39c5d95bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa7c5f620d0f9e5e095781cc89af339') in 0.020504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.486333 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGButtonTab.png
+  artifactKey: Guid(5b7708b58e7ad754a9139984704a7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGButtonTab.png using Guid(5b7708b58e7ad754a9139984704a7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be54128f06ff6889f3d00ad00c40f672') in 0.021121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGBuyHero.png
+  artifactKey: Guid(f1989520df27e734e9634e88f7b45b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGBuyHero.png using Guid(f1989520df27e734e9634e88f7b45b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c73b4d246ad87ba592ce890112ab4b') in 0.030297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGContentMissions.png
+  artifactKey: Guid(328ab622b87bb2c4c9e1910eaf09b89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGContentMissions.png using Guid(328ab622b87bb2c4c9e1910eaf09b89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c6da6e4c05984d406dd8c64b549657') in 0.021414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039414 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGCooldownSaveMe.png
+  artifactKey: Guid(d7e20f951cfdecb4bb5d20aec2f8f003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGCooldownSaveMe.png using Guid(d7e20f951cfdecb4bb5d20aec2f8f003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759b34c184edb392df4399f55605474e') in 0.035902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.022600 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGFrontItemRun.png
+  artifactKey: Guid(639a5d0d1932a174a851f20f2c64e1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGFrontItemRun.png using Guid(639a5d0d1932a174a851f20f2c64e1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa754c73faefba5b83637b1f55aa917') in 0.022582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.026662 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/BGIconTopCountry.png
+  artifactKey: Guid(86d8d9f3400c4304f8c603c06af4c2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/BGIconTopCountry.png using Guid(86d8d9f3400c4304f8c603c06af4c2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1698ddfb42dffc07ae7844788cc63415') in 0.024542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.041208 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/BGIconTopMultiplayer.png
+  artifactKey: Guid(bcf77fe7273c37b42a83bf1c8be97a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/BGIconTopMultiplayer.png using Guid(bcf77fe7273c37b42a83bf1c8be97a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05aba6e31720b8c6a006513f98af0cb1') in 0.029876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.077948 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGOpenBox.png
+  artifactKey: Guid(ca1db3feb8547fb4987c417e7cbb4905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGOpenBox.png using Guid(ca1db3feb8547fb4987c417e7cbb4905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10058bed970fd459bc3d29d857ac7490') in 0.102056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.048153 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGSelected.png
+  artifactKey: Guid(3cbece78bed69ac4d83fbd198a17ee94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGSelected.png using Guid(3cbece78bed69ac4d83fbd198a17ee94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e777016d616ad8c5a9dd48396c9eb898') in 0.025181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.049598 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGTalkSomething.png
+  artifactKey: Guid(da62c58bdcb1c5b4088aa959afed9ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGTalkSomething.png using Guid(da62c58bdcb1c5b4088aa959afed9ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b72ece6fac7ddde45e062974fec5b45') in 0.021578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044473 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/BGTopFriend.png
+  artifactKey: Guid(713f70253e803d045a0e5f31ae37774d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/BGTopFriend.png using Guid(713f70253e803d045a0e5f31ae37774d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047a6f6494e1ca85bec7ab5a9e46c055') in 0.024738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.443382 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Building.png
+  artifactKey: Guid(95701690ee15bf947bb757348c2800a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Building.png using Guid(95701690ee15bf947bb757348c2800a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e2b152cb5412ab18dd6b7c49e09610') in 0.024161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.113056 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/CreepyCat1.png
+  artifactKey: Guid(a83bb8d75c3a71a46aaab8fe7aa2c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/CreepyCat1.png using Guid(a83bb8d75c3a71a46aaab8fe7aa2c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51c7fb4d8dc8f4ea261c2e2ecee8e82') in 0.409283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.334756 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/CreepyCat2.png
+  artifactKey: Guid(5cdfc5cae38a2864c93eeab455557608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/CreepyCat2.png using Guid(5cdfc5cae38a2864c93eeab455557608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb064d16aab2d24772a886474c6fac05') in 0.355220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.204739 seconds.
+  path: Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagChinese.png
+  artifactKey: Guid(aeb2382e6d7d0fb4cbb7228c7a0b58b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagChinese.png using Guid(aeb2382e6d7d0fb4cbb7228c7a0b58b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a13732aad9c80249716b4674813505a') in 0.032516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.178726 seconds.
+  path: Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagFrench.png
+  artifactKey: Guid(e30fd7bf86e369844b3d6201f3e085e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagFrench.png using Guid(e30fd7bf86e369844b3d6201f3e085e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1806d108e9e09cdd5a7c9894dde1ee1b') in 0.016849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagKorean.png
+  artifactKey: Guid(fb19f789bbc5468499bc10b378270fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagKorean.png using Guid(fb19f789bbc5468499bc10b378270fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f4566561487dc9b156597b7f4873845') in 0.018871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.017253 seconds.
+  path: Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagPortuguese.png
+  artifactKey: Guid(c1094560a2e49cc49927ce86836cc6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagPortuguese.png using Guid(c1094560a2e49cc49927ce86836cc6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57ff7b51fb7961a687c960471250c24') in 0.018968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.159933 seconds.
+  path: Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagSpanish.png
+  artifactKey: Guid(ac2af1591c02a324db87c188f6f3a6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/FlagCountrys/FlagSpanish.png using Guid(ac2af1591c02a324db87c188f6f3a6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae835587545bc93c2e532339950ff6b3') in 0.017770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Source/ResourcesGame/Textures/IntroGame/Hoverbike.png
+  artifactKey: Guid(acec5be12137efa4289f76b6548daf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/IntroGame/Hoverbike.png using Guid(acec5be12137efa4289f76b6548daf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd923e340a0888f6cba59f7b55c3898') in 0.034200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002640 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon00.Png
+  artifactKey: Guid(4499aaefbebf4a9459c05b301d758836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon00.Png using Guid(4499aaefbebf4a9459c05b301d758836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642c6dfdf99bddad3d614e4c85ef0774') in 0.021508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon04.Png
+  artifactKey: Guid(25bbb5a9d8b752a40a9b183c627f2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon04.Png using Guid(25bbb5a9d8b752a40a9b183c627f2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5fbc0e4d0a77101ba256bf63652136') in 0.021028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.448547 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon06.Png
+  artifactKey: Guid(33a86660b8a99784cb69a72438c83253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon06.Png using Guid(33a86660b8a99784cb69a72438c83253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1670ab0225f894145c734b2ef0e3df3') in 0.019067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.042435 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon08.Png
+  artifactKey: Guid(4f5b85707b1495b49803c9d9eb670535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon08.Png using Guid(4f5b85707b1495b49803c9d9eb670535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7914751f34ec77a69cbfb97601cbad') in 0.017997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon11.Png
+  artifactKey: Guid(a69af08cbbde4b7448b511d4fe482378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon11.Png using Guid(a69af08cbbde4b7448b511d4fe482378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9a26867d84f280630a6de217aaada2') in 0.018215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.210330 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon12.Png
+  artifactKey: Guid(e9784d33d57c19344b1236c4abd85620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon12.Png using Guid(e9784d33d57c19344b1236c4abd85620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f532269ffd3e938ce96abbeb01fa83a1') in 0.017458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.018825 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon14.Png
+  artifactKey: Guid(43fceb94dbd99ed43ba8c2d213d89d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading/Icon14.Png using Guid(43fceb94dbd99ed43ba8c2d213d89d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a44a41382fc91d1464d18f0c68de3e1') in 0.019370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.258545 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconAvatarFB.png
+  artifactKey: Guid(3bb356f8e150c464abbb1ea1b5c8d4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconAvatarFB.png using Guid(3bb356f8e150c464abbb1ea1b5c8d4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7cd815f0788f82d80913a8edddf84f') in 0.017637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconCamera.png
+  artifactKey: Guid(48cd2076992043147ba3263ff7802490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconCamera.png using Guid(48cd2076992043147ba3263ff7802490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dbdbb24b70b36d6155c8289a550147') in 0.019358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.016591 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconChestBox.png
+  artifactKey: Guid(610f53a1473672042aabf9896a6ce4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconChestBox.png using Guid(610f53a1473672042aabf9896a6ce4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba44d3bf0ab9fb2683ef0077fe2ba521') in 0.019402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconCup.png
+  artifactKey: Guid(e384495720c3d314a80a426b7a3a9ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconCup.png using Guid(e384495720c3d314a80a426b7a3a9ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e799677932601f46b3c778d5af47489') in 0.017582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.263606 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconDiamond.png
+  artifactKey: Guid(bab6eda8335ab584c8eed956e791e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconDiamond.png using Guid(bab6eda8335ab584c8eed956e791e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d816e4a109e83d59d5b09139d5e6af8') in 0.017870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024438 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconGoldBag.png
+  artifactKey: Guid(5d4573ff8200991418cea89198e498c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconGoldBag.png using Guid(5d4573ff8200991418cea89198e498c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32faff1df9fce00bc4e5e8c5a70ce78') in 0.018802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.418893 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconGoldBagNormal.png
+  artifactKey: Guid(407abc0eb2a80eb4b8834f246b4f1a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconGoldBagNormal.png using Guid(407abc0eb2a80eb4b8834f246b4f1a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e9bd50e98accc1c4cb7b6f7edcdd12') in 0.018155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.022313 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconHome.png
+  artifactKey: Guid(c3476cb5b9ce3e74a83abf2e8abe739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconHome.png using Guid(c3476cb5b9ce3e74a83abf2e8abe739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a794f28f5f1436d86ae0fcd29c3ddea') in 0.017031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.340079 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconHoverBike.png
+  artifactKey: Guid(719039f41fdb00549aaa22aa7626b0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconHoverBike.png using Guid(719039f41fdb00549aaa22aa7626b0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8504a65fe4b1ae5685cdf963022d51c5') in 0.019351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.019542 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconHoverboard2.png
+  artifactKey: Guid(87d6022bd2e320c4d8ed28b4c59136d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconHoverboard2.png using Guid(87d6022bd2e320c4d8ed28b4c59136d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abca3e77c06e66570631219177163857') in 0.018255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.826844 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconKeyMenu.png
+  artifactKey: Guid(981842b6fb53dea4b8013dfaeb7d82e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconKeyMenu.png using Guid(981842b6fb53dea4b8013dfaeb7d82e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb55f7f732d7f3f3e7ac559f64a2568') in 0.018257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.018226 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconKeyNormal.png
+  artifactKey: Guid(cf9e9967e7a1fd945b39316ff4315db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconKeyNormal.png using Guid(cf9e9967e7a1fd945b39316ff4315db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794fc0905162f9debfd4bfbbf4bd44da') in 0.018789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.297741 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconLoading.png
+  artifactKey: Guid(bf5814ffae0cd5d40ae8aba3079a1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconLoading.png using Guid(bf5814ffae0cd5d40ae8aba3079a1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345eeadf49d80c16ac11d4ed9b6676b7') in 0.017324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036025 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconMagnet.png
+  artifactKey: Guid(811e853aff3ef2d489764271b0dcdfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconMagnet.png using Guid(811e853aff3ef2d489764271b0dcdfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a103506987263eb713f3b62bcd25ce') in 0.020812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.028910 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconMenuMe.png
+  artifactKey: Guid(37ee782c0eeb8f749be2a45de9d06fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconMenuMe.png using Guid(37ee782c0eeb8f749be2a45de9d06fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2667c2a43872c71f8b7de17293c225ca') in 0.018480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.302698 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconMenuShop.png
+  artifactKey: Guid(bb1213dc5d08c96488f08b8ee7fed8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconMenuShop.png using Guid(bb1213dc5d08c96488f08b8ee7fed8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcf898911ac3ce98920ae60d9e94ac5') in 0.018452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.073698 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconOfferSale.png
+  artifactKey: Guid(fa95429044ae20043a2024a235eeae43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconOfferSale.png using Guid(fa95429044ae20043a2024a235eeae43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b7febe1c0eb7d345aee751f3a98b95') in 0.021269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.481403 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconRuntasticDrink.png
+  artifactKey: Guid(167dd149bef62a445a33085380d59b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconRuntasticDrink.png using Guid(167dd149bef62a445a33085380d59b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55205a5fd6216f24a1828a897ff87f5d') in 0.019307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.019471 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconSetting.png
+  artifactKey: Guid(faedc7c49dadc504b85a4761af501385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconSetting.png using Guid(faedc7c49dadc504b85a4761af501385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d10028adf85e3ecb384349b4a6701b9') in 0.027063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021329 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconShop.png
+  artifactKey: Guid(b3ec6dc8e6b321d4385a9acd21c51486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconShop.png using Guid(b3ec6dc8e6b321d4385a9acd21c51486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a16c2c943d4f2f7a87dc944920ce20') in 0.018326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.376517 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconSportsGlasses.png
+  artifactKey: Guid(458dcb15ae86610428c3b14765c29123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconSportsGlasses.png using Guid(458dcb15ae86610428c3b14765c29123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043e1b90f007baa2a88e24704bd500fb') in 0.019221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.056752 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconSymbolOfLife.png
+  artifactKey: Guid(5e15c346ff064704ab7df0f2f544da94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconSymbolOfLife.png using Guid(5e15c346ff064704ab7df0f2f544da94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e8e1d79629b0da2cd5c3b0d403d731') in 0.021408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.016582 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Icons/IconX2.png
+  artifactKey: Guid(aa2a8799c1f0c1b46b0d574d1b125626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Icons/IconX2.png using Guid(aa2a8799c1f0c1b46b0d574d1b125626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ce28bf660ed71f1385742c8dc8525b') in 0.024140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.374295 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Generals/PointWhite.png
+  artifactKey: Guid(bce5c34fbd7324e4cb989eb7a52ff506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Generals/PointWhite.png using Guid(bce5c34fbd7324e4cb989eb7a52ff506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e04af873eef4b8e4de4908a10d004151') in 0.018001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/ProLoadRun.png
+  artifactKey: Guid(4ec35ed8a0ce87448ac426c55b0644cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/ProLoadRun.png using Guid(4ec35ed8a0ce87448ac426c55b0644cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f865cec7a818bf1659c944fc96027c0d') in 0.021216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.026510 seconds.
+  path: Assets/Source/ResourcesGame/Textures/IntroGame/Runubos.png
+  artifactKey: Guid(ff3748f18cbe1014b83e19765f2c764f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/IntroGame/Runubos.png using Guid(ff3748f18cbe1014b83e19765f2c764f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11bc4ef63b6997e5f57004716aab24b2') in 0.027611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.395204 seconds.
+  path: Assets/Source/ResourcesGame/Textures/Background/Sun.png
+  artifactKey: Guid(c0fe71a4da4cf2143a35d2df3b3db79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/Background/Sun.png using Guid(c0fe71a4da4cf2143a35d2df3b3db79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411db79c3c400efe8a6188b3f537557b') in 0.034172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.159279 seconds.
+  path: Assets/Source/ResourcesGame/Textures/IntroGame/Trampoline.png
+  artifactKey: Guid(9c9183af433d8334690797ac7bc3739e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/ResourcesGame/Textures/IntroGame/Trampoline.png using Guid(9c9183af433d8334690797ac7bc3739e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e309cfba4c7e1bede59103429e5c093') in 0.031525 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005660 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1053ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (813ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3331 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.6 MB). Loaded Objects now: 5055.
+Memory consumption went from 186.4 MB to 185.7 MB.
+Total: 3.046400 ms (FindLiveObjects: 0.386800 ms CreateObjectMapping: 0.244700 ms MarkObjects: 2.090800 ms  DeleteObjects: 0.322900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005234 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.022 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1022ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (770ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (264ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3258 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.6 MB). Loaded Objects now: 5057.
+Memory consumption went from 183.5 MB to 182.8 MB.
+Total: 3.161100 ms (FindLiveObjects: 0.450300 ms CreateObjectMapping: 0.290800 ms MarkObjects: 2.132700 ms  DeleteObjects: 0.286300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005940 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\marek\Documents\GitHub\SubwaySurfers\Subway Surfers\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.990 seconds
+Domain Reload Profiling:
+	ReloadAssembly (991ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (769ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3258 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.6 MB). Loaded Objects now: 5059.
+Memory consumption went from 183.6 MB to 182.9 MB.
+Total: 3.034100 ms (FindLiveObjects: 0.401800 ms CreateObjectMapping: 0.213900 ms MarkObjects: 2.118500 ms  DeleteObjects: 0.299000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3555.755244 seconds.
+  path: Assets/Fonts/Black Anemone SDF.asset
+  artifactKey: Guid(fa0386a4f42e4e34984a325548596a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Black Anemone SDF.asset using Guid(fa0386a4f42e4e34984a325548596a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: 'be6eab019d59f6df1a0d7a459282d12c') in 0.109459 seconds 
