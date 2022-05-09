@@ -382,7 +382,9 @@
 "Assets/Scripts/AnimationController.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraFollow.cs"
-"Assets/Scripts/ZaPosledniMesicJsemVystridalAsi15MovementScriptuAleTadyJeDalsi.cs"
+"Assets/Scripts/Movement.cs"
+"Assets/Scripts/ScoreManager.cs"
+"Assets/UIManager.cs"
 -langversion:9.0
 
 /deterministic

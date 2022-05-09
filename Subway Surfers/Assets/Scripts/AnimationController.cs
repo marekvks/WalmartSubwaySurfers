@@ -7,7 +7,7 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     [SerializeField] private Animator playerAnimator;
-    [SerializeField] private ZaPosledniMesicJsemVystridalAsi15MovementScriptuAleTadyJeDalsi playerMovement;
+    [SerializeField] private Movement playerMovement;
 
     private void Update()
     {
