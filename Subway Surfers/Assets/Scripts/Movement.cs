@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using DG.Tweening;
 
 public class Movement : MonoBehaviour
 {
@@ -13,14 +14,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private float gravity = -800f;
     private Vector3 m_Velocity = Vector3.zero;
 
-    [HideInInspector] public bool m_IsWallLeft, m_IsWallRight;
-    [HideInInspector] public bool m_IsGrounded;
+    [HideInInspector] public bool IsWallLeft, IsWallRight;
+    [HideInInspector] public bool IsGrounded;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius = 0.1f;
-    
-    
+
     [SerializeField] private float slideHeight = 0.64f;
     [SerializeField] private Vector3 slideOffset;
     
@@ -54,41 +54,41 @@ public class Movement : MonoBehaviour
     {
         // tudum tudum
 
-        m_IsGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
+        IsGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
         m_Velocity.y += gravity * Time.deltaTime;
 
-        if (m_IsGrounded && m_Velocity.y < 0f)
+        if (IsGrounded && m_Velocity.y < 0f)
         {
             m_Velocity.y = -2f;
         }
 
-        if (m_IsGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (IsGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
 
-        m_IsWallLeft = Physics.Raycast(transform.position, -transform.right, 5f);
-        m_IsWallRight = Physics.Raycast(transform.position, transform.right, 5f);
+        IsWallLeft = Physics.Raycast(transform.position, -transform.right, 5f);
+        IsWallRight = Physics.Raycast(transform.position, transform.right, 5f);
 
-        if ((Input.GetKeyDown(KeyCode.D) && m_IsWallLeft) || Input.GetKeyDown(KeyCode.A) && m_IsWallRight) SlideToSide(centerLandPos);
-            else if (Input.GetKeyDown(KeyCode.A) && !m_IsWallLeft) SlideToSide(leftLandPos);
-        else if (Input.GetKeyDown(KeyCode.D) && !m_IsWallRight) SlideToSide(rightLandPos);
+        if ((Input.GetKeyDown(KeyCode.D) && IsWallLeft) || Input.GetKeyDown(KeyCode.A) && IsWallRight) SlideToSide(centerLandPos);
+            else if (Input.GetKeyDown(KeyCode.A) && !IsWallLeft) SlideToSide(leftLandPos);
+        else if (Input.GetKeyDown(KeyCode.D) && !IsWallRight) SlideToSide(rightLandPos);
 
-        if (m_IsGrounded && Input.GetKeyDown(KeyCode.S))
+        if (IsGrounded && Input.GetKeyDown(KeyCode.S))
         {
             Slide();
         }
-        else if (!m_IsGrounded && Input.GetKeyDown(KeyCode.S))
+        else if (!IsGrounded && Input.GetKeyDown(KeyCode.S))
         {
             m_Velocity.y -= 10f;
         }
 
         controller.Move(Vector3.forward * speed * Time.deltaTime);
         controller.Move(Vector3.up * m_Velocity.y * Time.deltaTime);
-        Vector3 pos = transform.position;
-        pos.x = currentXPos;
-        controller.enabled = false; transform.position = Vector3.Lerp(transform.position, pos, smoothTime); controller.enabled = true;
+
+        //transform.position = Vector3.Lerp(transform.position, pos, smoothTime);
+
         if ((justSlided && Time.time > m_SavedTimeToNormalizeColliders) || justSlided && Input.GetKeyDown(KeyCode.Space))
         {
             NormalizeCollider();
@@ -99,6 +99,7 @@ public class Movement : MonoBehaviour
     private void SlideToSide(Transform side)
     {
         currentXPos = side.position.x;
+        transform.DOMoveX(currentXPos, smoothTime);
         audioManager.PlaySFXSound(audioManager.SFX_Swoosh);
     }
 

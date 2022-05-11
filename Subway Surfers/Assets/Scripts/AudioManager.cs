@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Music_PauseMenu;
     public AudioClip SFX_Swoosh;
     public AudioClip SFX_StartRun;
+    public AudioClip SFX_CoinPickup;
 
     [Header("Volume Sliders")]
     public Slider MasterVolSlider;
@@ -27,7 +28,7 @@ public class AudioManager : MonoBehaviour
     public Slider SFXVolSlider;
 
     [Header("Json Serialization")]
-    private string m_Path;
+    private string _path;
 
     class SaveOptions
     {
@@ -38,7 +39,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        m_Path = Application.persistentDataPath + "/options.json";
+        _path = Application.persistentDataPath + "/options.json";
         LoadFromJson();
         
         if (SFX_StartRun != null) sfx.PlayOneShot(SFX_StartRun);
@@ -72,12 +73,12 @@ public class AudioManager : MonoBehaviour
     private void SaveToJson(SaveOptions saveOptions)
     {
         string json = JsonConvert.SerializeObject(saveOptions, Formatting.None);
-        File.WriteAllText(m_Path, json);
+        File.WriteAllText(_path, json);
     }
 
     private void LoadFromJson()
     {
-        if (!File.Exists(m_Path))
+        if (!File.Exists(_path))
         {
             SaveOptions defaultConfig = new SaveOptions()
             {
@@ -91,7 +92,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        string json = File.ReadAllText(m_Path);
+        string json = File.ReadAllText(_path);
         SaveOptions loadOptions = JsonConvert.DeserializeObject<SaveOptions>(json);
 
         MasterVolSlider.value = loadOptions.MasterVolume;
