@@ -8,12 +8,15 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("")]
+    
     [Header("TMP")]
     public TMP_Text ScoreTMP;
     public TMP_Text CoinsTMP;
     
     [Header("Menu")]
     [SerializeField] private GameObject menu;
+    public GameObject DeadMenu;
 
     private void Update()
     {
@@ -29,7 +32,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    private void TimeScale(float timescale)
+    public void TimeScale(float timescale)
     {
         Time.timeScale = timescale;
     }
@@ -37,6 +40,11 @@ public class UIManager : MonoBehaviour
     public void Menu(bool trueorfalse)
     {
         menu.SetActive(trueorfalse);
+    }
+
+    public void ShowOrHideMenu(GameObject menu, bool show)
+    {
+        menu.SetActive(show);
     }
 
     public void ChangeText(TMP_Text tmp, string text)

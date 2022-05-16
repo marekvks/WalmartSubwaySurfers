@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Vector3 slideOffset;
     
     [SerializeField] private float smoothTime = 0.15f;
+    [SerializeField] private float pushDownForce = 10f;
 
 
     [SerializeField] private Transform centerLandPos, rightLandPos, leftLandPos;
@@ -39,6 +40,18 @@ public class Movement : MonoBehaviour
     private bool justSlided;
     private float m_SavedTimeToNormalizeColliders;
 
+
+    public enum Instruction
+    {
+        Run,
+        Jump,
+        SlideDown,
+        SlideLeft,
+        SlideRight
+    }
+
+    public Instruction CurrentInstruction = Instruction.Run;
+
     private void Start()
     {
         m_NormalColliderHeight = controller.height;
@@ -47,6 +60,8 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(controller.detectCollisions);
+        if (CurrentInstruction != Instruction.Run) Debug.Log(CurrentInstruction.ToString());
         Move();
     }
 
@@ -63,7 +78,7 @@ public class Movement : MonoBehaviour
             m_Velocity.y = -2f;
         }
 
-        if (IsGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (IsGrounded && CurrentInstruction == Instruction.Jump)
         {
             Jump();
         }
@@ -71,17 +86,17 @@ public class Movement : MonoBehaviour
         IsWallLeft = Physics.Raycast(transform.position, -transform.right, 5f);
         IsWallRight = Physics.Raycast(transform.position, transform.right, 5f);
 
-        if ((Input.GetKeyDown(KeyCode.D) && IsWallLeft) || Input.GetKeyDown(KeyCode.A) && IsWallRight) SlideToSide(centerLandPos);
-            else if (Input.GetKeyDown(KeyCode.A) && !IsWallLeft) SlideToSide(leftLandPos);
-        else if (Input.GetKeyDown(KeyCode.D) && !IsWallRight) SlideToSide(rightLandPos);
+        if ((CurrentInstruction == Instruction.SlideRight && IsWallLeft && !IsWallRight) || CurrentInstruction == Instruction.SlideLeft && IsWallRight && !IsWallLeft) SlideToSide(centerLandPos);
+            else if (CurrentInstruction == Instruction.SlideLeft && !IsWallLeft) SlideToSide(leftLandPos);
+        else if (CurrentInstruction == Instruction.SlideRight && !IsWallRight) SlideToSide(rightLandPos);
 
-        if (IsGrounded && Input.GetKeyDown(KeyCode.S))
+        if (IsGrounded && CurrentInstruction == Instruction.SlideDown)
         {
             Slide();
         }
-        else if (!IsGrounded && Input.GetKeyDown(KeyCode.S))
+        else if (!IsGrounded && CurrentInstruction == Instruction.SlideDown)
         {
-            m_Velocity.y -= 10f;
+            m_Velocity.y -= pushDownForce;
         }
 
         controller.Move(Vector3.forward * speed * Time.deltaTime);
@@ -89,7 +104,7 @@ public class Movement : MonoBehaviour
 
         //transform.position = Vector3.Lerp(transform.position, pos, smoothTime);
 
-        if ((justSlided && Time.time > m_SavedTimeToNormalizeColliders) || justSlided && Input.GetKeyDown(KeyCode.Space))
+        if ((justSlided && Time.time > m_SavedTimeToNormalizeColliders) || justSlided && CurrentInstruction == Instruction.Jump)
         {
             NormalizeCollider();
             justSlided = false;
