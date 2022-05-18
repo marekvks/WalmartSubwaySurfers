@@ -43,8 +43,6 @@ public class Swipe : MonoBehaviour
             {
                 xDirection = 0f;
             }
-            
-            Debug.Log($"!fin! xdir: {-xDirection} ydir: {-yDirection}"); // Debug :D
 
             if (-yDirection >= 1f) // Porovnávám to v mínusu, protože by mi to vracelo obráceně hodnoty for ex.: xDirection == 20f; a místo right by to bylo left
             {

@@ -1,39 +1,33 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.WSA;
+using Object = System.Object;
 using Random = UnityEngine.Random;
+using Vector3 = UnityEngine.Vector3;
 
 public class TileSpawner : MonoBehaviour
 {
     [SerializeField] private string playerTag;
 
-    public List<GameObject> TilePrefabs = new List<GameObject>();
-
     private GameObject _curTile;
 
 
-    private ObjectPooler _objectPool;
+    private ObjectPooler objectPool;
 
     private void Awake()
     {
-        _objectPool = ObjectPooler.Instance; // Nastaví _objectPool na Instanci ObjectPooleru - Singleton Pattern
+        objectPool = ObjectPooler.Instance; // Nastaví _objectPool na Instanci ObjectPooleru - Singleton Pattern
     }
 
-    public void InstantiateNewTileAndDestroyTheCurrentOne(Transform collider)
+    public void InstantiateNewTileAndDestroyTheCurrentOne(Transform trigger)
     {
-        Transform prevTile = collider.parent;
-        Debug.Log(prevTile);
-        _objectPool.SpawnFromPool("Tiles", new Vector3(0f, 0f, prevTile.position.z + 400f));
+        Transform prevTile = trigger.parent;
+        Vector3 spawnPos = new Vector3(0f, 0f, prevTile.position.z + 400);
+        ObjectPooler.Instance.SpawnFromPool("Tiles", spawnPos);
         prevTile.gameObject.SetActive(false);
     }
-
-    /*private GameObject RandomTile()
-    {
-        int randomNumber = Random.Range(0, TilePrefabs.Count);
-        GameObject randomTile = TilePrefabs[randomNumber];
-        return randomTile;
-    }*/
-
 }

@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Pool;
+using Random = UnityEngine.Random;
 
 public class ObjectPooler : MonoBehaviour
 {
@@ -27,34 +29,38 @@ public class ObjectPooler : MonoBehaviour
 
     public List<Pool> Pools; // List třídy nad
 
-    public Dictionary<string, Queue<GameObject>> PoolDict; // Dictionary, ke kterému se accessuju přes tag (string), má v sobě Queue GameObjectů
+    public Dictionary<string, List<GameObject>> PoolDict; // Dictionary, ke kterému se accessuju přes tag (string), má v sobě List GameObjectů
 
     private void Start()
     {
-        PoolDict = new Dictionary<string, Queue<GameObject>>(); // Nastaví se Dictionary na nový Dictionary :)
+        PoolDict = new Dictionary<string, List<GameObject>>(); // Nastaví se Dictionary na nový Dictionary :)
 
         foreach (Pool item in Pools) // Pojíždí všechny classy Pool v listu Pools
         {
-            Queue<GameObject> objectPool = new Queue<GameObject>(); // Vytvoří se Queue, Queue funguje doslova jako řada, která si bere vždycky věci popořadě
+            List<GameObject> objectPoolList = new List<GameObject>();
 
             for (int i = 0; i < item.GameObjects.Count; i++) // Slouží k vytvoření objektů
             {
                 GameObject newObject = Instantiate(item.GameObjects[i]); // Vytvoří objekt, uloží si to jako GameObject
                 newObject.SetActive(false); // Vypne je, aby nebyli vidět
-                objectPool.Enqueue(newObject); // Dá je do queue - na konec
+                objectPoolList.Add(newObject);
             }
 
-            PoolDict.Add(item.Tag, objectPool); // Dá queue objectPool do Dictionary PoolDict a přidá tomu tag, abych se k tomu mohl accessovat přes tag
+            PoolDict.Add(item.Tag, objectPoolList); // Dá List objectPool do Dictionary PoolDict a přidá tomu tag, abych se k tomu mohl accessovat přes tag
         }
     }
 
     public GameObject SpawnFromPool(string tag, Vector3 position) // Stejně jako instantiate vrací GameObject, abych s ním mohl dále pracovat, tak to vracím i tady
     {
-        GameObject spawnObject = PoolDict[tag].Dequeue(); // Vezme první GameObject z Queue, uloží si to jako spawnObject
+        GameObject spawnObject;
+        
+        do
+        {
+            int randomNum = Random.Range(0, PoolDict[tag].Count);
+            spawnObject = PoolDict[tag][randomNum];
+        } while (spawnObject.activeInHierarchy);
         spawnObject.transform.position = position; // Nastaví požadovanou pozici
         spawnObject.SetActive(true); // Zapne
-        
-        PoolDict[tag].Enqueue(spawnObject); // Dá to zpátky do Queue, aby se mohl znovu využívat
 
         return spawnObject; // vrátí GameObject stejně jako ho vrací instantiate
     }

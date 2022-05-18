@@ -30,6 +30,7 @@ public class PlayerMisc : MonoBehaviour
             col.GetComponent<IGrabable>().Grab();
         } else if (col.tag == despawnTriggerTag)
         {
+            Debug.Log(col.name);
             col.GetComponent<TileSpawner>().InstantiateNewTileAndDestroyTheCurrentOne(col.transform);
         }
     }

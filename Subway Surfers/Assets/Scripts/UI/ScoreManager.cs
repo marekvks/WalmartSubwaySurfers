@@ -26,7 +26,6 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         AddScore();
-        uiManager.ChangeText(uiManager.ScoreTMP, score + "m");
     }
 
     private void AddScore()
@@ -35,6 +34,7 @@ public class ScoreManager : MonoBehaviour
         {
             score += scoreMultiplyer;
             _desiredTime = Time.time + desiredTimeMultiplyer;
+            uiManager.ChangeText(uiManager.ScoreTMP, score + "m");
         }
     }
 

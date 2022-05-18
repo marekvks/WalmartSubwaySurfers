@@ -18,17 +18,21 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject menu;
     public GameObject DeadMenu;
 
+    private bool _escapeMenuOpen = false;
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !menu.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.Escape) && !_escapeMenuOpen)
         {
             TimeScale(0f);
             Menu(true);
+            _escapeMenuOpen = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && menu.activeInHierarchy)
+        else if (Input.GetKeyDown(KeyCode.Escape) && _escapeMenuOpen)
         {
             TimeScale(1f);
             Menu(false);
+            _escapeMenuOpen = false;
         }
     }
 
