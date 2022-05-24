@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] private float scoreMultiplyer = 4f;
 
-    private float score = 0f;
+    public float score = 0f;
     private int coins = 0;
 
     private float _desiredTime;
