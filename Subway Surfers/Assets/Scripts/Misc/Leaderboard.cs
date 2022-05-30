@@ -16,12 +16,19 @@ using UnityEngine.UI;
 
 public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 {
+    [Header("Scripts")]
+    [SerializeField] private ScoreManager scoreManager;
+
+    [Header("Server Info")]
     [SerializeField] private string uri;
     [SerializeField] private string token;
 
-    [SerializeField] private ScoreManager scoreManager;
+    [Header("Json things ...")]
+    private string _loadedJson;
     
-    [System.Serializable]
+    [Header("UI")]
+    [SerializeField] private TMP_InputField usernameInput;
+
     public class LeaderboardClass
     {
         public string username;
@@ -30,28 +37,23 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 
     public List<LeaderboardClass> LeaderboardList;
 
-    private string loadedJson;
-
     class DataToSend
     {
         public string token;
         public LeaderboardClass leaderboard;
     }
 
-    [SerializeField] private TMP_InputField usernameInput;
-    
     private void Start()
     {
-        Application.stackTraceLogType = StackTraceLogType.Full;
-        if (SceneManager.GetActiveScene().buildIndex == 0) // jen v Menu
+        if (SceneManager.GetActiveScene().buildIndex == 0) // Loaduje se jen v main menu
             StartCoroutine(GetRequest(uri));
     }
 
     public void Load()
     {
-        if (loadedJson != null)
+        if (_loadedJson != null)
         {
-            LeaderboardList = JsonConvert.DeserializeObject<List<LeaderboardClass>>(loadedJson).ToList();
+            LeaderboardList = JsonConvert.DeserializeObject<List<LeaderboardClass>>(_loadedJson).ToList();
 
             LeaderboardList = LeaderboardList.OrderByDescending(c => c.score).ToList();
             
@@ -62,13 +64,14 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
     public void Save()
     {
         string uname = usernameInput.text;
+
         if (uname == null || uname == "")
             uname = "Noname";
         
         LeaderboardClass leaderboardClass = new LeaderboardClass
         {
             username = uname,
-            score = Convert.ToInt32(scoreManager.score)
+            score = Convert.ToInt32(scoreManager.Score)
         };
         DataToSend dataToSend = new DataToSend
         {
@@ -91,7 +94,7 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
             Debug.Log($"Network error: {webRequest.error}");
         else
         {
-            loadedJson = webRequest.downloadHandler.text;
+            _loadedJson = webRequest.downloadHandler.text;
             Load();
         }
     }
@@ -107,9 +110,14 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 
         if (webRequest.result == UnityWebRequest.Result.Success) Debug.Log("Success!🎉");
         else Debug.Log("Error!");
+
+        webRequest.uploadHandler.Dispose();
     }
 
-
+    
+    
+    // SetUI
+    [Header("UI Options")]
     [SerializeField] private GameObject prefab;
     [SerializeField] private Transform leaderboardRoot;
 
@@ -119,23 +127,24 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 
     private void SetUI()
     {
-        int position = 1; // Slouží k očíslování
-        foreach (LeaderboardClass player in LeaderboardList)
+        for (int pos = 1; pos <= LeaderboardList.Count; pos++)
         {
-            GameObject prefab = Instantiate(this.prefab, leaderboardRoot.transform);
+            if (pos > 10) break;
 
-            List<TMP_Text> texts = prefab.GetComponentsInChildren<TMP_Text>().ToList();
+            LeaderboardClass player = LeaderboardList[pos - 1];
 
-            for (int i = 0; i < texts.Count; i++)
+            GameObject spawnedPrefab = Instantiate(prefab, leaderboardRoot.transform);
+
+            List<TMP_Text> textsInPrefab = spawnedPrefab.GetComponentsInChildren<TMP_Text>().ToList();
+
+            foreach (TMP_Text text in textsInPrefab)
             {
-                TMP_Text txt = texts[i]; // Abych nemusel furt hard codovaqt texts[i]
-
                 string desiredText = "NaN";
 
-                switch (texts[i].name)
+                switch (text.name)
                 {
                     case positionTag:
-                        desiredText = position.ToString();
+                        desiredText = pos.ToString();
                         break;
                     case nameTag:
                         desiredText = player.username;
@@ -145,10 +154,8 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
                         break;
                 }
 
-                txt.text = desiredText;
+                text.text = desiredText;
             }
-            position++;
         }
     }
-
 }

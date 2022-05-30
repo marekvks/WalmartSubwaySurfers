@@ -10,13 +10,13 @@ public class ScoreManager : MonoBehaviour
     [Header("Managers")]
     [SerializeField] private UIManager uiManager;
 
+    [Header("Values")]
     [SerializeField] private float scoreMultiplyer = 4f;
-
-    public float score = 0f;
-    private int coins = 0;
-
-    private float _desiredTime;
     [SerializeField] private float desiredTimeMultiplyer = 1f;
+    private float _desiredTime;
+
+    [HideInInspector] public float Score = 0f;
+    private int _coins = 0;
 
     private void Start()
     {
@@ -30,23 +30,17 @@ public class ScoreManager : MonoBehaviour
 
     private void AddScore()
     {
-        if (Time.time > _desiredTime)
+        if (Time.time > _desiredTime) // Přidává se po čase
         {
-            score += scoreMultiplyer;
+            Score += scoreMultiplyer;
             _desiredTime = Time.time + desiredTimeMultiplyer;
-            uiManager.ChangeText(uiManager.ScoreTMP, score + "m");
+            uiManager.ChangeText(uiManager.ScoreTMP, Score + "m");
         }
     }
 
     public void AddCoin(int ammount)
     {
-        coins += ammount;
-        uiManager.ChangeText(uiManager.CoinsTMP, coins.ToString());
+        _coins += ammount;
+        uiManager.ChangeText(uiManager.CoinsTMP, _coins.ToString());
     }
-
-    public void ResetScore()
-    {
-        score = 0f;
-    }
-
 }

@@ -11,22 +11,17 @@ using Vector3 = UnityEngine.Vector3;
 
 public class TileSpawner : MonoBehaviour
 {
+    [Header("Trigger Options")]
     [SerializeField] private string playerTag;
 
+    [Header("Tile Info")]
+    [SerializeField] private float tileSpawnZOffset = 400f;
     private GameObject _curTile;
-
-
-    private ObjectPooler objectPool;
-
-    private void Awake()
-    {
-        objectPool = ObjectPooler.Instance; // Nastaví _objectPool na Instanci ObjectPooleru - Singleton Pattern
-    }
 
     public void InstantiateNewTileAndDestroyTheCurrentOne(Transform trigger)
     {
         Transform prevTile = trigger.parent;
-        Vector3 spawnPos = new Vector3(0f, 0f, prevTile.position.z + 400);
+        Vector3 spawnPos = new Vector3(0f, 0f, prevTile.position.z + tileSpawnZOffset);
         ObjectPooler.Instance.SpawnFromPool("Tiles", spawnPos);
         prevTile.gameObject.SetActive(false);
     }

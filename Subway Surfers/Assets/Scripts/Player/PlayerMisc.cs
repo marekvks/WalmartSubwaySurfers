@@ -7,9 +7,6 @@ using UnityEngine;
 
 public class PlayerMisc : MonoBehaviour
 {
-    [Header("Objects")]
-    [SerializeField] private Camera cam;
-    
     [Header("Tags")]
     [SerializeField] private string obstacleTag;
     [SerializeField] private string grabableTag;
@@ -18,27 +15,24 @@ public class PlayerMisc : MonoBehaviour
     [Header("Scripts")]
     [SerializeField] private Movement movement;
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameManager GameManager;
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag == obstacleTag)
-        {
+        string tag = col.tag;
+
+        if (tag == obstacleTag)
             Die();
-        }
-        else if (col.tag == grabableTag)
-        {
+        else if (tag == grabableTag)
             col.GetComponent<IGrabable>().Grab();
-        } else if (col.tag == despawnTriggerTag)
-        {
-            Debug.Log(col.name);
+        else if (tag == despawnTriggerTag)
             col.GetComponent<TileSpawner>().InstantiateNewTileAndDestroyTheCurrentOne(col.transform);
         }
-    }
 
     private void Die()
     {
         uiManager.ShowOrHideMenu(uiManager.DeadMenu, true);
-        uiManager.TimeScale(0f);
+        GameManager.Pause();
         movement.enabled = false;
     }
 }

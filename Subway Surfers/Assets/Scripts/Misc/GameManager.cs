@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,24 +10,29 @@ public class GameManager : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        TimeScale(1f);
+        Resume();
     }
-    
+
     public void LoadPrevScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        TimeScale(1f);
+        Resume();
     }
 
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        TimeScale(1f);
+        Resume();
     }
 
-    public void TimeScale(float time)
+    public void Pause()
     {
-        Time.timeScale = time;
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1f;
     }
 
     public void Exit()

@@ -6,19 +6,12 @@ using UnityEngine;
 
 public class Swipe : MonoBehaviour
 {
-    [Header("Movement")]
+    [Header("Scripts")]
     [SerializeField] private Movement movement;
-
-    private Camera _camera;
 
     private Vector3 _startPoint = Vector3.zero;
     private Vector3 _endPoint = Vector3.zero;
     private Vector3 _difference = Vector3.zero;
-
-    private void Start()
-    {
-        _camera = Camera.main;
-    }
 
     private void Update()
     {

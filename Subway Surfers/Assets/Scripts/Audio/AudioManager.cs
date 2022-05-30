@@ -17,7 +17,6 @@ public class AudioManager : MonoBehaviour
 
     [Header("Audio Clips")]
     public AudioClip Music_Main;
-    public AudioClip Music_PauseMenu;
     public AudioClip SFX_Swoosh;
     public AudioClip SFX_StartRun;
     public AudioClip SFX_CoinPickup;
@@ -41,7 +40,7 @@ public class AudioManager : MonoBehaviour
     {
         _path = Application.persistentDataPath + "/options.json";
         LoadFromJson();
-        
+
         if (SFX_StartRun != null) sfx.PlayOneShot(SFX_StartRun);
         music.clip = Music_Main;
         music.Play();

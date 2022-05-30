@@ -8,15 +8,16 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [Header("")]
-    
     [Header("TMP")]
     public TMP_Text ScoreTMP;
     public TMP_Text CoinsTMP;
     
     [Header("Menu")]
-    [SerializeField] private GameObject menu;
+    [SerializeField] private GameObject _menu;
     public GameObject DeadMenu;
+
+    [Header("Scripts")]
+    [SerializeField] private GameManager gameManager;
 
     private bool _escapeMenuOpen = false;
 
@@ -24,26 +25,21 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !_escapeMenuOpen)
         {
-            TimeScale(0f);
+            gameManager.Pause();
             Menu(true);
             _escapeMenuOpen = true;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && _escapeMenuOpen)
         {
-            TimeScale(1f);
+            gameManager.Resume();
             Menu(false);
             _escapeMenuOpen = false;
         }
     }
 
-    public void TimeScale(float timescale)
+    public void Menu(bool trueOrFalse)
     {
-        Time.timeScale = timescale;
-    }
-
-    public void Menu(bool trueorfalse)
-    {
-        menu.SetActive(trueorfalse);
+        _menu.SetActive(trueOrFalse);
     }
 
     public void ShowOrHideMenu(GameObject menu, bool show)

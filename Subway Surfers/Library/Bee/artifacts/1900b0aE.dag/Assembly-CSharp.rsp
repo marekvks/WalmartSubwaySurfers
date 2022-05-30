@@ -346,9 +346,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/GameManager.cs"
-"Assets/Leaderboard.cs"
-"Assets/ObjectPooler.cs"
 "Assets/Resources/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/Resources/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/Resources/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -387,13 +384,16 @@
 "Assets/Scripts/Camera/CameraFollow.cs"
 "Assets/Scripts/Items/Grabable/Coin.cs"
 "Assets/Scripts/Items/Grabable/IGrabable.cs"
+"Assets/Scripts/Misc/GameManager.cs"
+"Assets/Scripts/Misc/Leaderboard.cs"
 "Assets/Scripts/Player/Animation/AnimationController.cs"
 "Assets/Scripts/Player/Movement/Movement.cs"
 "Assets/Scripts/Player/Movement/Swipe.cs"
 "Assets/Scripts/Player/PlayerMisc.cs"
+"Assets/Scripts/Spawning/ObjectPooler.cs"
+"Assets/Scripts/Spawning/TileSpawner.cs"
 "Assets/Scripts/UI/ScoreManager.cs"
 "Assets/Scripts/UI/UIManager.cs"
-"Assets/TileSpawner.cs"
 -langversion:9.0
 
 /deterministic
