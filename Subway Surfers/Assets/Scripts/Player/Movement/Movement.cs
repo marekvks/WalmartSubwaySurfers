@@ -1,10 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using DG.Tweening;
-using UnityEditor.Callbacks;
 
 public class Movement : MonoBehaviour
 {

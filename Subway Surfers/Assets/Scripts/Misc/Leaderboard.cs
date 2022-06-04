@@ -2,17 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
-using Unity.VisualScripting;
-using UnityEditorInternal.Profiling;
 using UnityEngine;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 using TMPro;
-using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 {
