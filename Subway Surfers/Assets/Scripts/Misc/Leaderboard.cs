@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Leaderboard : MonoBehaviour // Uklidit si tu :P
+public class Leaderboard : MonoBehaviour
 {
     [Header("Scripts")]
     [SerializeField] private ScoreManager scoreManager;
@@ -20,10 +20,12 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 
     [Header("Json things ...")]
     private string _loadedJson;
-    
+
     [Header("UI")]
     [SerializeField] private TMP_InputField usernameInput;
 
+    private int currentSceneIndex;
+    
     public class LeaderboardClass
     {
         public string username;
@@ -40,7 +42,9 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0) // Loaduje se jen v main menu
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        // Loaduje se jen v main menu
+        if (currentSceneIndex == 0)
             StartCoroutine(GetRequest(uri));
     }
 
@@ -60,8 +64,7 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
     {
         string uname = usernameInput.text;
 
-        if (uname == null || uname == "")
-            uname = "Noname";
+        if (String.IsNullOrEmpty(uname)) uname = "Noname";
         
         LeaderboardClass leaderboardClass = new LeaderboardClass
         {
@@ -83,7 +86,8 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
     {
         UnityWebRequest webRequest = UnityWebRequest.Get(uri);
 
-        yield return webRequest.SendWebRequest(); // Počká na stránku než zareaguje
+        // Počká na stránku než zareaguje
+        yield return webRequest.SendWebRequest();
 
         if (webRequest.result == UnityWebRequest.Result.ConnectionError)
             Debug.Log($"Network error: {webRequest.error}");
@@ -97,11 +101,15 @@ public class Leaderboard : MonoBehaviour // Uklidit si tu :P
     IEnumerator PostRequest(string uri, string jsonData)
     {
         UnityWebRequest webRequest = UnityWebRequest.Post(uri, "POST");
-        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData); // Encoding.UTF8.GetBytes kóduje znaky do posloupnosti bytů
-        webRequest.uploadHandler = new UploadHandlerRaw(bodyRaw); // UploadHandler stojí za managováním "těla" dat, které jsou uploadnutý na server
-        webRequest.SetRequestHeader("Content-Type", "application/json"); // Nastaví HTTP request header content na json, "Content-Type" je name headeru - Case sensitive - musí být správně velká a malá písmena
+        // Encoding.UTF8.GetBytes kóduje znaky do posloupnosti bytů
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
+        // UploadHandler stojí za managováním "těla" dat, které jsou uploadnutý na server
+        webRequest.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        // Nastaví HTTP request header content na json, "Content-Type" je name headeru - Case sensitive - musí být správně velká a malá písmena
+        webRequest.SetRequestHeader("Content-Type", "application/json");
 
-        yield return webRequest.SendWebRequest(); // Počká na stránku než zareaguje
+        // Počká na stránku než zareaguje
+        yield return webRequest.SendWebRequest();
 
         if (webRequest.result == UnityWebRequest.Result.Success) Debug.Log("Success!🎉");
         else Debug.Log("Error!");

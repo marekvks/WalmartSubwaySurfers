@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
@@ -13,7 +10,7 @@ public class TileSpawner : MonoBehaviour
     [SerializeField] private float tileSpawnZOffset = 400f;
     private GameObject _curTile;
 
-    public void InstantiateNewTileAndDestroyTheCurrentOne(Transform trigger)
+    public void InstantiateTile(Transform trigger)
     {
         Transform prevTile = trigger.parent;
         Vector3 spawnPos = new Vector3(0f, 0f, prevTile.position.z + tileSpawnZOffset);

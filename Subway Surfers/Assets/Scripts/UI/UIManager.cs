@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -37,18 +32,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void Menu(bool trueOrFalse)
-    {
-        _menu.SetActive(trueOrFalse);
-    }
+    public void Menu(bool trueOrFalse) => _menu.SetActive(trueOrFalse);
 
-    public void ShowOrHideMenu(GameObject menu, bool show)
-    {
-        menu.SetActive(show);
-    }
+    public void ShowOrHideMenu(GameObject menu, bool show) => menu.SetActive(show);
 
-    public void ChangeText(TMP_Text tmp, string text)
-    {
-        tmp.text = text;
-    }
+    public void ChangeText(TMP_Text tmp, string text) => tmp.text = text;
 }

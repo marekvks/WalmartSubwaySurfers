@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -79,42 +76,45 @@ public class Movement : MonoBehaviour
     {
         // tudum tudum
 
-        _velocity.y += gravity * Time.deltaTime; // Gravitace - 1/2gt^2
+        _velocity.y += gravity * Time.deltaTime;
 
         IsGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
         IsWallLeft = Physics.Raycast(transform.position, -transform.right, 5f);
         IsWallRight = Physics.Raycast(transform.position, transform.right, 5f);
 
-        if (IsGrounded && _velocity.y < 0f) // Pokud je na zemi a velocity.y je menší než 0, tak bude nastavena na -2, protože kdybych pak chtěl vyskočit, velocity.y by byla tak malá, že bych nevyskočil
-            _velocity.y = -2f; // -2 je tu, protože furt chci, aby to hráče tlačilo k zemi
+        if (IsGrounded && _velocity.y < 0f)
+            // -2 je tu, protože furt chci, aby to hráče tlačilo k zemi přestože na zemi je
+            _velocity.y = -2f;
 
         if (IsGrounded && CurrentInstruction == Instruction.Jump)
             Jump();
         
+        // Podmínka nad - Pokud chce hráč slidovat doprava, není ve středu, zeď není vpravo nebo když chce slidovat doleva - samá podmínka, tak slidne na střed
         if ((CurrentInstruction == Instruction.SlideRight && _currentPos != centerLandPos && !IsWallRight) || CurrentInstruction == Instruction.SlideLeft && _currentPos != centerLandPos && !IsWallLeft)
-            // Podmínka nad - Pokud chce hráč slidovat doprava, není ve středu, zeď není vpravo nebo když chce slidovat doleva - samá podmínka, tak slidne na střed
             SlideToSide(centerLandPos);
-        else if (CurrentInstruction == Instruction.SlideRight && _currentPos == centerLandPos && !IsWallRight) // Pokud chce slideovat doprava, hráč je ve prostředku a zeď není vpravo, tak sliduje
+        else if (CurrentInstruction == Instruction.SlideRight && _currentPos == centerLandPos && !IsWallRight)
             SlideToSide(rightLandPos);
-        else if (CurrentInstruction == Instruction.SlideLeft && _currentPos == centerLandPos && !IsWallLeft) // Pokud chce slideovat doleva, hráč je ve prostředku a zeď není vlevo, tak sliduje
+        else if (CurrentInstruction == Instruction.SlideLeft && _currentPos == centerLandPos && !IsWallLeft)
             SlideToSide(leftLandPos);
 
         if (IsGrounded && CurrentInstruction == Instruction.SlideDown)
             Slide();
-        else if (!IsGrounded && CurrentInstruction == Instruction.SlideDown) // Pokud není na zemi, přesto chce slidovat dolů, tak to hráče spustí dolu - pushne
+        // Pokud není na zemi, přesto chce slidovat dolů, tak to hráče spustí dolu - pushne
+        else if (!IsGrounded && CurrentInstruction == Instruction.SlideDown)
             _velocity.y -= pushDownForce;
 
         controller.Move(Vector3.forward * speed * Time.deltaTime);
         controller.Move(Vector3.up * _velocity.y * Time.deltaTime);
 
-        if (_justSlided && Time.time > _savedTimeToNormalizeColliders || _justSlided && CurrentInstruction == Instruction.Jump) // Po dokončení slidu se collider znormalizuje - nastaví se normální velikost
+        // Po dokončení slidu se collider znormalizuje - nastaví se normální velikost
+        if (_justSlided && Time.time > _savedTimeToNormalizeColliders || _justSlided && CurrentInstruction == Instruction.Jump)
             NormalizeCollider();
     }
 
     private void SlideToSide(Transform side)
     {
-        _desiredPos = side.position.x; // Desired pozice
-        transform.DOMoveX(_desiredPos, smoothTime); // Move do strany přes DOTween
+        _desiredPos = side.position.x;
+        transform.DOMoveX(_desiredPos, smoothTime);
         audioManager.PlaySFXSound(audioManager.SFX_Swoosh);
         _currentPos = side;
     }
@@ -127,21 +127,26 @@ public class Movement : MonoBehaviour
 
     private void Slide()
     {
-        _savedTimeToNormalizeColliders = Time.time + 1f; // Čas na to, kdy se má collider znormalizovat - normální výška
-        controller.height = slideHeight; // Změní se velikost collideru
-        controller.center = slideOffset; // nastaví se center collideru trošku níž
+        // Čas na to, kdy se má collider znormalizovat - normální výška
+        _savedTimeToNormalizeColliders = Time.time + 1f;
+        // Změní se velikost collideru
+        controller.height = slideHeight;
+        // nastaví se center collideru trošku níž
+        controller.center = slideOffset;
         audioManager.PlaySFXSound(audioManager.SFX_Swoosh);
         _justSlided = true;
     }
 
-    public void NormalizeCollider() // Nastaví výšku collideru na normální (startovní), to samé s centrem
+    // Nastaví výšku collideru na normální (startovní), to samé s centrem
+    public void NormalizeCollider()
     {
         controller.height = _normalColliderHeight;
         controller.center = _normalColliderCenter;
     }
 
+    // Vykreslování např. rádiusů - je vidět pouze ve scéně, nikoliv ve hře
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(groundCheck.position, groundCheckRadius); // Vykresluje radius ground checku - jen pro debug
+        Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
     }
 }

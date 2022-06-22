@@ -1941,6 +1941,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1470392338}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SaveAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &692890619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3634,6 +3646,7 @@ MonoBehaviour:
   MasterVolSlider: {fileID: 391268002}
   MusicVolSlider: {fileID: 1737875750}
   SFXVolSlider: {fileID: 1625622938}
+  optionsPath: /options.json
 --- !u!1 &1484711669
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
@@ -28,7 +25,8 @@ public class ScoreManager : MonoBehaviour
 
     private void AddScore()
     {
-        if (Time.time > _desiredTime) // Přidává se po čase
+        // Přidává se po čase
+        if (Time.time > _desiredTime)
         {
             Score += scoreMultiplyer;
             _desiredTime = Time.time + desiredTimeMultiplyer;

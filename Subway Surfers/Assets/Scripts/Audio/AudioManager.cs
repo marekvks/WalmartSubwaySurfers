@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -29,6 +27,8 @@ public class AudioManager : MonoBehaviour
     [Header("Json Serialization")]
     private string _path;
 
+    [SerializeField] private string optionsPath = "/options.json";
+
     class SaveOptions
     {
         public float MasterVolume;
@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        _path = Application.persistentDataPath + "/options.json";
+        _path = Application.persistentDataPath + optionsPath;
         LoadFromJson();
 
         if (SFX_StartRun != null) sfx.PlayOneShot(SFX_StartRun);
@@ -46,29 +46,28 @@ public class AudioManager : MonoBehaviour
         music.Play();
     }
     
-    public void PlaySFXSound(AudioClip sound)
-    {
-        sfx.PlayOneShot(sound);
-    }
+    public void PlaySFXSound(AudioClip sound) => sfx.PlayOneShot(sound);
 
     public void ChangeVolume()
     {
         AudioMixer.SetFloat("MasterVol", MasterVolSlider.value);
         AudioMixer.SetFloat("MusicVol", MusicVolSlider.value);
         AudioMixer.SetFloat("SFXVol", SFXVolSlider.value);
+    }
 
+    public void SaveAudio()
+    {
         SaveOptions currentOptions = new SaveOptions()
         {
             MasterVolume = MasterVolSlider.value,
             MusicVolume = MusicVolSlider.value,
             SFXVolume = SFXVolSlider.value
         };
-        
+    
         SaveToJson(currentOptions);
     }
-    
-    // Json Serialization
-    
+
+        // Json Serialization
     private void SaveToJson(SaveOptions saveOptions)
     {
         string json = JsonConvert.SerializeObject(saveOptions, Formatting.None);

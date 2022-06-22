@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Swipe : MonoBehaviour
@@ -16,11 +13,13 @@ public class Swipe : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && Time.timeScale > 0f)
         {
-            _startPoint = Input.mousePosition; // Uložení si vektoru startovní pozice myši
+            // Uložení si vektoru startovní pozice myši
+            _startPoint = Input.mousePosition;
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0) && Time.timeScale > 0f)
         {
-            _endPoint = Input.mousePosition; // Uložení si vektoru koncové pozice myši
+            // Uložení si vektoru koncové pozice myši
+            _endPoint = Input.mousePosition;
 
             _difference = _startPoint - _endPoint;
 
@@ -36,7 +35,8 @@ public class Swipe : MonoBehaviour
                 xDirection = 0f;
             }
 
-            if (-yDirection >= 1f) // Porovnávám to v mínusu, protože by mi to vracelo obráceně hodnoty for ex.: xDirection == 20f; a místo right by to bylo left
+            // Porovnávám to v mínusu, protože by mi to vracelo obráceně hodnoty for ex.: xDirection == 20f; a místo right by to bylo left
+            if (-yDirection >= 1f)
             {
                 // aka up
                 movement.CurrentInstruction = Movement.Instruction.Jump;
